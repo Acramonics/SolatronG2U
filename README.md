@@ -11,7 +11,6 @@ Update to video
 https://www.youtube.com/watch?v=DAS1KVU_FaA
 
 
-|---------|-------------|----------|----------|---------------------|
 | Arduino Line | Arduino Pin | GPIB Pin | Function | ATMega328P     |
 |---------|-------------|----------|----------|---------------------|
 | A0      | 19/R12      | 1        | DIO1     | (PC0/ADC0)          |
