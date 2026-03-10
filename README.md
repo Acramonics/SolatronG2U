@@ -94,21 +94,25 @@ left (L) or right (R) column of pins - both counting from the top.
 | D3           |  6/L6       | --- | 10       | SRQ      | (PD3)               |
 | D2           |  5/L5       | --- | 11       | ATN      | (PD2)               |
 | D9           | 12/L12      | --- | 17       | REN      | (PB1)               |
-| GND          |  4/L4       | --- | 12,18-24 | GND      | 12 to cable shield  |
+| GND          |  4/L4       | --- | 12,18-24 | GND      |                     |
 | GND          | 29/R2       | --- | 12,18-24 | GND      |                     |
+| +5V          | 27/R4       | +5V |          |          |                     |
 | D1/TX1       |  1/L1       | NC  |          |          |                     |
 | RX0          |  2/L2       | NC  |          |          |                     |
 | RESET        |  3/L3       | NC  |          |          |                     |
 | D12          | 15/L15      | NC  |          |          |                     |
 | VIN          | 30/R1       | NC  |          |          |                     |
 | RESET2       | 28/R3       | NC  |          |          |                     |
-| +5V          | 27/R4       | +5V |          |          |                     |
 | A7           | 26/R5       | NC  |          |          |                     |
 | A6           | 25/R6       | NC  |          |          |                     |
 | AREF         | 18/R13      | NC  |          |          |                     |
 | +3V3         | 17/R14      | NC  |          |          |                     |
 | D13          | 16/R15      | NC  |          |          |                     |
 
+Note that each GND pin in the GPIB connector is paired with one of the
+data lines in a twisted pair. Pin 12 is connected to the cable shield.
+In this application, this is rather irrelevant as everything is
+connected to a common ground.
 
 Software
 --------
