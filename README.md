@@ -4,6 +4,8 @@ G2U
 Andrew Martin, acramonics, 2026
 -------------------------------
 
+`G2U` is a PCB for a GPIB to USB adapter using an Arduino Nano 3.
+
 GPIB is a vendor-neutral interface for controlling equipment and
 logging data. While rather outdated, and largely replaced by USB and
 Ethernet, some equipment still uses it and there are many second hand
@@ -12,8 +14,6 @@ Solartron 7150+.
 
 A video on GPIB (also known as IEEE-488) is at
 https://www.youtube.com/watch?v=EEtETGfL_VE
-
-**G2U** is a PCB for a GPIB to USB adapter using an Arduino Nano 3.
 
 The original circuit and software was by Rudolf Reuter and modified by
 @TheHWCave. Rudolf's blog, where this was described, doesn't seem to
@@ -26,7 +26,7 @@ unable to obtain a PCB-mounted Centronics-style (*Series 57*) 24-pin
 connector. These are now easily available from AliExpress (at about
 £2.50 with free postage if you spend more than £8.00), and I have used
 a PCB-mounted male connector that can plug straight into the back of
-the hardware so you don't need to worry about cables.
+the hardware, so you don't need to worry about cables.
 
 @TheHWCave provides the code for the Arduino Nano 3 and a logger script at
 https://github.com/TheHWcave/GPIB-to-USB
@@ -78,29 +78,29 @@ left (L) or right (R) column of pins - both counting from the top.
 
 | Arduino Line | Arduino Pin |     | GPIB Pin | Function | ATMega328P          |
 |--------------|-------------|-----|----------|----------|---------------------|
-| A0           | 19/R12      |     | 1        | DIO1     | (PC0/ADC0)          |
-| A1           | 20/R11      |     | 2        | DIO2     | (CP1/ADC1)          |
-| A2           | 21/R10      |     | 3        | DIO3     | (PC2/ADC2)          |
-| A3           | 22/R9       |     | 4        | DIO4     | (PC3/ADC3)          |
-| A4           | 23/R8       |     | 13       | DIO5     | (PC4/ADC4)          |
-| A5           | 24/R7       |     | 14       | DIO6     | (PC5/ADC5)          |
-| D10          | 13/L13      |     | 15       | DIO7     | (PB2)               |
-| D11          | 14/L14      |     | 16       | DIO8     | (PB3(MOSI))         |
-| D8           | 11/L11      |     | 5        | EIO      | (PB0)               |
-| D7           | 10/L10      |     | 6        | DAV      | (PD7)               |
-| D6           |  9/L9       |     | 7        | NRFD     | (PD6)               |
-| D5           |  8/L8       |     | 8        | NDAC     | (PD5)               |
-| D4           |  7/L7       |     | 9        | IFC      | (PD4)               |
-| D3           |  6/L6       |     | 10       | SRQ      | (PD3)               |
-| D2           |  5/L5       |     | 11       | ATN      | (PD2)               |
-| D9           | 12/L12      |     | 17       | REN      | (PB1)               |
-| GND          |  4/L4       |     | 12,18-24 | GND      | 12 to cable shield  |
+| A0           | 19/R12      | --- | 1        | DIO1     | (PC0/ADC0)          |
+| A1           | 20/R11      | --- | 2        | DIO2     | (CP1/ADC1)          |
+| A2           | 21/R10      | --- | 3        | DIO3     | (PC2/ADC2)          |
+| A3           | 22/R9       | --- | 4        | DIO4     | (PC3/ADC3)          |
+| A4           | 23/R8       | --- | 13       | DIO5     | (PC4/ADC4)          |
+| A5           | 24/R7       | --- | 14       | DIO6     | (PC5/ADC5)          |
+| D10          | 13/L13      | --- | 15       | DIO7     | (PB2)               |
+| D11          | 14/L14      | --- | 16       | DIO8     | (PB3(MOSI))         |
+| D8           | 11/L11      | --- | 5        | EIO      | (PB0)               |
+| D7           | 10/L10      | --- | 6        | DAV      | (PD7)               |
+| D6           |  9/L9       | --- | 7        | NRFD     | (PD6)               |
+| D5           |  8/L8       | --- | 8        | NDAC     | (PD5)               |
+| D4           |  7/L7       | --- | 9        | IFC      | (PD4)               |
+| D3           |  6/L6       | --- | 10       | SRQ      | (PD3)               |
+| D2           |  5/L5       | --- | 11       | ATN      | (PD2)               |
+| D9           | 12/L12      | --- | 17       | REN      | (PB1)               |
+| GND          |  4/L4       | --- | 12,18-24 | GND      | 12 to cable shield  |
+| GND          | 29/R2       | --- | 12,18-24 | GND      |                     |
 | D1/TX1       |  1/L1       | NC  |          |          |                     |
 | RX0          |  2/L2       | NC  |          |          |                     |
 | RESET        |  3/L3       | NC  |          |          |                     |
 | D12          | 15/L15      | NC  |          |          |                     |
 | VIN          | 30/R1       | NC  |          |          |                     |
-| GND          | 29/R2       | GND |          | GND      |                     |
 | RESET2       | 28/R3       | NC  |          |          |                     |
 | +5V          | 27/R4       | +5V |          |          |                     |
 | A7           | 26/R5       | NC  |          |          |                     |
