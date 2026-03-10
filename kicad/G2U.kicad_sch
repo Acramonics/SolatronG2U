@@ -3478,7 +3478,7 @@
 			(uuid "4e00efde-8cfe-4b22-b85d-502217ab6f89")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R24")
 					(unit 1)
@@ -3547,7 +3547,7 @@
 			(uuid "dd6dbada-61b7-4141-bded-64eebe2017b8")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R7")
 					(unit 1)
@@ -3613,7 +3613,7 @@
 			(uuid "f759c60b-5c42-4add-b2e6-f886b752b2ef")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "#PWR04")
 					(unit 1)
@@ -3682,7 +3682,7 @@
 			(uuid "49a6bbf0-71a8-432e-9526-c3ec4a229117")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R17")
 					(unit 1)
@@ -3745,7 +3745,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e60ce37-0199-422b-bae6-506c6694bb4b")
+			(uuid "8e60ce37-0199-422b-bae6-506c6694bb4c")
 		)
 		(instances
 			(project ""
@@ -3817,7 +3817,7 @@
 			(uuid "6e8841c0-d51f-4632-a13f-9a9c51eccb71")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R27")
 					(unit 1)
@@ -3886,7 +3886,7 @@
 			(uuid "83b8843e-556d-4816-9e4e-ed94b56a9420")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R13")
 					(unit 1)
@@ -3955,7 +3955,7 @@
 			(uuid "5588cb34-a9c9-4156-aa7a-43cd2c293cd2")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R15")
 					(unit 1)
@@ -4024,7 +4024,7 @@
 			(uuid "c84aec04-726a-40e0-9b55-4194b2f1e864")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R4")
 					(unit 1)
@@ -4093,7 +4093,7 @@
 			(uuid "fe88e807-e0ec-41ce-8114-f9f88bf41d6e")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R25")
 					(unit 1)
@@ -4162,7 +4162,7 @@
 			(uuid "3ba3528e-e15b-4d1c-92ef-e8be11d1f7eb")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R22")
 					(unit 1)
@@ -4197,7 +4197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_TE-Connectivity:TE_MATE-N-LOK_1-794108-x_2x12_P4.14mm_Horizontal"
+		(property "Footprint" "ACRM:Connector_CentronicsMale-2x12_P2.16mm_P4.29_Horizontal"
 			(at 179.07 106.68 0)
 			(effects
 				(font
@@ -4438,7 +4438,7 @@
 			(uuid "860f3319-2154-4d3d-aff0-d7d4ac22863d")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R11")
 					(unit 1)
@@ -4507,7 +4507,7 @@
 			(uuid "a04fd6d7-3fa5-4bcb-97f5-e7f30d5baf25")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R14")
 					(unit 1)
@@ -4576,7 +4576,7 @@
 			(uuid "a98cf193-254a-4a5d-b8f3-ddb31ef7ff09")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R19")
 					(unit 1)
@@ -4645,7 +4645,7 @@
 			(uuid "cb12e9e9-d231-48c8-919e-bdaa4c5b738b")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R32")
 					(unit 1)
@@ -4714,7 +4714,7 @@
 			(uuid "ae22b1ea-2e72-48d3-9aae-34829067cc6b")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R20")
 					(unit 1)
@@ -4783,7 +4783,7 @@
 			(uuid "50db16f9-e631-4612-9898-30e03c94aa45")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R30")
 					(unit 1)
@@ -4852,7 +4852,7 @@
 			(uuid "7598f4c7-4d81-4a3d-b1f6-57abd6714584")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R3")
 					(unit 1)
@@ -4921,7 +4921,7 @@
 			(uuid "0752a1eb-ab0a-492c-b1ea-af722a5588cf")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R31")
 					(unit 1)
@@ -4990,7 +4990,7 @@
 			(uuid "c06150b5-8c73-4675-aeda-f71a15c1b156")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R26")
 					(unit 1)
@@ -5059,7 +5059,7 @@
 			(uuid "4ac9b6ca-f251-4d6e-ad0e-ddcc3ad9c1b7")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R16")
 					(unit 1)
@@ -5128,7 +5128,7 @@
 			(uuid "647a5bb5-c3dc-41a6-b44a-9612e0c7ca11")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R28")
 					(unit 1)
@@ -5197,7 +5197,7 @@
 			(uuid "e96870c3-a406-476a-9d28-ff4ef1ee6e98")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R2")
 					(unit 1)
@@ -5266,7 +5266,7 @@
 			(uuid "ebacfccc-78a4-4d4d-8c0e-9056f510139f")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R23")
 					(unit 1)
@@ -5335,7 +5335,7 @@
 			(uuid "76672585-30cf-45f0-8cb1-63c0988957fd")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R29")
 					(unit 1)
@@ -5404,7 +5404,7 @@
 			(uuid "5462e6c2-61ba-4776-84fa-0e826a278417")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R18")
 					(unit 1)
@@ -5473,7 +5473,7 @@
 			(uuid "9a9a52cb-b463-4640-9c6a-67359f6241e5")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R21")
 					(unit 1)
@@ -5542,7 +5542,7 @@
 			(uuid "b8db5414-6277-4588-8490-4bf0fc60a29b")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R9")
 					(unit 1)
@@ -5611,7 +5611,7 @@
 			(uuid "a0d3874c-a409-4f28-8812-03dae888ba18")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R10")
 					(unit 1)
@@ -5680,7 +5680,7 @@
 			(uuid "ce90f1e1-f361-4768-94ea-6c492faf3774")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R12")
 					(unit 1)
@@ -5749,7 +5749,7 @@
 			(uuid "c3005cb4-5051-4401-a778-b45bcbdfff40")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R8")
 					(unit 1)
@@ -6039,7 +6039,7 @@
 			(uuid "da69aa67-de45-4930-8e6b-0d94f67a075c")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R5")
 					(unit 1)
@@ -6108,7 +6108,7 @@
 			(uuid "d9d0a275-dd26-48fe-ba15-804e82ea094c")
 		)
 		(instances
-			(project "SolatronG2U"
+			(project "G2U"
 				(path "/60ef04a7-55e6-4518-99ef-f1da78c421ee"
 					(reference "R6")
 					(unit 1)
