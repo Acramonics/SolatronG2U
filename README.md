@@ -131,9 +131,15 @@ Software installation steps
 
 ### Installing the Arduino software
 
-*To be written*
+*To be written.*
 
 ### Setting the brownout fuse
 
 *To be written when I have verified this on a couple of Arduino Nano
 boards.*
+
+Future plans
+------------
+
+In future, I may do an SMD version to minimize the size and weight!
+
