@@ -12,37 +12,40 @@ Ethernet, some equipment still uses it and there are many second hand
 devices (such as multimeters) that use it including the well-regarded
 Solartron 7150+.
 
-A video on GPIB (also known as IEEE-488) is at
-https://www.youtube.com/watch?v=EEtETGfL_VE
+A video on GPIB (also known as IEEE-488) is [on
+YouTube](https://www.youtube.com/watch?v=EEtETGfL_VE) and details are
+on [Wikipedia](https://en.wikipedia.org/wiki/GPIB).
 
 The original circuit and software was by Rudolf Reuter and modified by
 @TheHWCave. Rudolf's blog, where this was described, doesn't seem to
 be available any more (as of March 2026), but @TheHWCave provides a
-detailed description of the circuit on YouTube at
-https://www.youtube.com/watch?v=RaLirRvSngk (see the screenshots in
-the `SourceImages` directory).  He builds it on stripboard and uses an
-Arduino breakout board, so I decided to create a PCB instead. He was
-unable to obtain a PCB-mounted Centronics-style (*Series 57*) 24-pin
-connector. These are now easily available from AliExpress (at about
-£2.50 with free postage if you spend more than £8.00), and I have used
-a PCB-mounted male connector that can plug straight into the back of
-the hardware, so you don't need to worry about cables.
+detailed description of the circuit [on
+YouTube](https://www.youtube.com/watch?v=RaLirRvSngk) (see the
+screenshots in the `SourceImages` directory).  He builds it on
+stripboard and uses an Arduino breakout board, so I decided to create
+a PCB instead. He was unable to obtain a PCB-mounted Centronics-style
+(*Series 57*) 24-pin connector. These are now easily available from
+AliExpress (at about £2.50 with free postage if you spend more than
+£8.00), and I have used a PCB-mounted male connector that can plug
+straight into the back of the hardware, so you don't need to worry
+about cables.
 
-@TheHWCave provides the code for the Arduino Nano 3 and a logger script at
-https://github.com/TheHWcave/GPIB-to-USB
+@TheHWCave provides the code for the Arduino Nano 3 and a logger
+script [on GitHub](https://github.com/TheHWcave/GPIB-to-USB).
 
-He provides an update video at
-https://www.youtube.com/watch?v=DAS1KVU_FaA which explains how to
-address a problem with the Arduino losing its software when the USB us
-disconnected, but the GPIB connection is still present. The GPIB seems
-to provide some partial power to the Arduino and he provides
+He provides an [update
+video](https://www.youtube.com/watch?v=DAS1KVU_FaA) which explains how
+to address a problem with the Arduino losing its software when the USB
+us disconnected, but the GPIB connection is still present. The GPIB
+seems to provide some partial power to the Arduino and he provides
 instructions on setting a brownout fuse in software.
 
 I provide a summary of all the necessary information on this page.
 
-Note that there is also discussion of creaing a GPIB/USB interface at
-https://egirland.blogspot.com/2014/03/arduino-uno-as-usb-to-gpib-controller.html
-Note that this uses different pin assignments and different software.
+Note that there is also [discussion of creaing a GPIB/USB
+interface](https://egirland.blogspot.com/2014/03/arduino-uno-as-usb-to-gpib-controller.html),
+but note that this uses different pin assignments and different
+software.
 
 The PCB
 -------
@@ -111,8 +114,9 @@ left (L) or right (R) column of pins - both counting from the top.
 
 Note that each GND pin in the GPIB connector is paired with one of the
 data lines in a twisted pair. Pin 12 is connected to the cable shield.
-In this application, this is rather irrelevant as everything is
-connected to a common ground.
+See [GPIB on WikiPedia](https://en.wikipedia.org/wiki/GPIB). In this
+application, this is rather irrelevant as everything is connected to a
+common ground.
 
 Software
 --------
