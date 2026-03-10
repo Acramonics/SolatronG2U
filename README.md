@@ -12,15 +12,15 @@ Ethernet, some equipment still uses it and there are many second hand
 devices (such as multimeters) that use it including the well-regarded
 Solartron 7150+.
 
-A video on GPIB (also known as IEEE-488) is [on
-YouTube](https://www.youtube.com/watch?v=EEtETGfL_VE) and details are
+A video on GPIB (also known as IEEE-488) is on
+[YouTube](https://www.youtube.com/watch?v=EEtETGfL_VE) and details are
 on [Wikipedia](https://en.wikipedia.org/wiki/GPIB).
 
 The original circuit and software was by Rudolf Reuter and modified by
 @TheHWCave. Rudolf's blog, where this was described, doesn't seem to
 be available any more (as of March 2026), but @TheHWCave provides a
-detailed description of the circuit [on
-YouTube](https://www.youtube.com/watch?v=RaLirRvSngk) (see the
+detailed description of the circuit on
+[YouTube](https://www.youtube.com/watch?v=RaLirRvSngk) (see the
 screenshots in the `SourceImages` directory).  He builds it on
 stripboard and uses an Arduino breakout board, so I decided to create
 a PCB instead. He was unable to obtain a PCB-mounted Centronics-style
@@ -31,7 +31,7 @@ straight into the back of the hardware, so you don't need to worry
 about cables.
 
 @TheHWCave provides the code for the Arduino Nano 3 and a logger
-script [on GitHub](https://github.com/TheHWcave/GPIB-to-USB).
+script on [GitHub](https://github.com/TheHWcave/GPIB-to-USB).
 
 He provides an [update
 video](https://www.youtube.com/watch?v=DAS1KVU_FaA) which explains how
@@ -42,7 +42,7 @@ instructions on setting a brownout fuse in software.
 
 I provide a summary of all the necessary information on this page.
 
-Note that there is also [discussion of creaing a GPIB/USB
+Note that there is also [discussion of creating a GPIB/USB
 interface](https://egirland.blogspot.com/2014/03/arduino-uno-as-usb-to-gpib-controller.html),
 but note that this uses different pin assignments and different
 software.
