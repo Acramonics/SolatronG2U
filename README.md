@@ -124,7 +124,16 @@ Using this is explained in the video at
 https://www.youtube.com/watch?v=RaLirRvSngk
 
 The 'brownout fuse' setting is described in the video at
-https://www.youtube.com/watch?v=DAS1KVU_FaA I will provide
-instructions when I have verified this on a couple of Arduino Nano
-boards.
+https://www.youtube.com/watch?v=DAS1KVU_FaA 
 
+Software installation steps
+---------------------------
+
+### Installing the Arduino software
+
+*To be written*
+
+### Setting the brownout fuse
+
+*To be written when I have verified this on a couple of Arduino Nano
+boards.*
