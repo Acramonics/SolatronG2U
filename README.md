@@ -148,29 +148,29 @@ couple of Arduino Nano boards. This is largely in note form!*
 
 Set the extended fuse byte
 
-Extended Fuse Byte | Bit No | Description | Default Value
--------------------|--------|-------------|--------------
--                  | 7      | -           | 1
--                  | 6      | -           | 1
--                  | 5      | -           | 1
--                  | 4      | -           | 1
--                  | 3      | -           | 1
-BODLEVEL2          | 2      | (*)         | 1 (unset)
-BODLEVEL1          | 1      | (*)         | 1 (unset)
-BODLEVEL0          | 0      | (*)         | 1 (unset)
+|Extended Fuse Byte | Bit No | Description | Default Value |
+|-------------------|--------|-------------|---------------|
+|-                  | 7      | -           | 1             |
+|-                  | 6      | -           | 1             |
+|-                  | 5      | -           | 1             |
+|-                  | 4      | -           | 1             |
+|-                  | 3      | -           | 1             |
+|BODLEVEL2          | 2      | (*)         | 1 (unset)     |
+|BODLEVEL1          | 1      | (*)         | 1 (unset)     |
+|BODLEVEL0          | 0      | (*)         | 1 (unset)     |
 
 (*) Brown-out Detector trigger level
 
-BODLEVEL 2:0 Fuses | Min V    | Typ V    | Max V    | Units
--------------------|----------|----------|----------|------
-111                | Off      | Off      | Off      |
-110                | 1.7      | 1.8      | 2.0      | V
-101                | 2.5      | 2.7      | 2.9      | V
-100                | 4.1      | 4.3      | 4.5      | V
-011                | Reserved | Reserved | Reserved |
-010                | Reserved | Reserved | Reserved |
-001                | Reserved | Reserved | Reserved |
-000                | Reserved | Reserved | Reserved |
+|BODLEVEL 2:0 Fuses | Min V    | Typ V    | Max V    | Units |
+|-------------------|----------|----------|----------|-------|
+|111                | Off      | Off      | Off      |       |        
+|110                | 1.7      | 1.8      | 2.0      | V     |
+|101                | 2.5      | 2.7      | 2.9      | V     |
+|100                | 4.1      | 4.3      | 4.5      | V     |
+|011                | Reserved | Reserved | Reserved |       |
+|010                | Reserved | Reserved | Reserved |       |
+|001                | Reserved | Reserved | Reserved |       |
+|000                | Reserved | Reserved | Reserved |       |
 
 BODLEVEL 2.0 Fuse setting b100 (#04) for 4.1V cutoff
 By default it is set to #FF
