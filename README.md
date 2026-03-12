@@ -30,6 +30,9 @@ AliExpress (at about £2.50 with free postage if you spend more than
 straight into the back of the hardware, so you don't need to worry
 about cables.
 
+Software
+--------
+
 @TheHWCave provides the code for the Arduino Nano 3 and a logger
 script on [GitHub](https://github.com/TheHWcave/GPIB-to-USB).
 
@@ -139,8 +142,111 @@ Software installation steps
 
 ### Setting the brownout fuse
 
-*To be written when I have verified this on a couple of Arduino Nano
-boards.*
+*I will write a more detailed version when I have verified this on a
+couple of Arduino Nano boards. This is largely in note form!*
+
+
+Set the extended fuse byte
+
+Extended Fuse Byte | Bit No | Description | Default Value
+-------------------|--------|-------------|--------------
+-                  | 7      | -           | 1
+-                  | 6      | -           | 1
+-                  | 5      | -           | 1
+-                  | 4      | -           | 1
+-                  | 3      | -           | 1
+BODLEVEL2          | 2      | (*)         | 1 (unset)
+BODLEVEL1          | 1      | (*)         | 1 (unset)
+BODLEVEL0          | 0      | (*)         | 1 (unset)
+
+(*) Brown-out Detector trigger level
+
+BODLEVEL 2:0 Fuses | Min V    | Typ V    | Max V    | Units
+-------------------|----------|----------|----------|------
+111                | Off      | Off      | Off      |
+110                | 1.7      | 1.8      | 2.0      | V
+101                | 2.5      | 2.7      | 2.9      | V
+100                | 4.1      | 4.3      | 4.5      | V
+011                | Reserved | Reserved | Reserved |
+010                | Reserved | Reserved | Reserved |
+001                | Reserved | Reserved | Reserved |
+000                | Reserved | Reserved | Reserved |
+
+BODLEVEL 2.0 Fuse setting b100 (#04) for 4.1V cutoff
+By default it is set to #FF
+
+Need a second Arduino or an ICSP programmer spported by the Arduino
+IDE to set the fuse. The AVRDude software is used to run the
+programmer. 
+
+Different Arduinos use different chips which have different signature
+bytes and this needs to match the programmer:
+
+Chip        | Byte 0x000 | Byte 0x001 | Byte 0x002
+------------|------------|------------|------------
+ATmega328   | 0x1E       | 0x95       | 0x14
+ATmega328P  | 0x1E       | 0x95       | 0x0F
+ATmega328PB | 0x1E       | 0x95       | 0x16
+
+For example, the Arduino IDE may call AVRDude expecting to find an
+ATmega328P, but AVRDude finds an ATmega328PB and stops.
+
+If this happens, simply copy the failed command from the upload window
+and run it from the command line instead correcting the errornous chip
+type. For example, assuming the arduino IDE is installed in a
+directory pointed to by the environment variable `$ARDUINO`:
+
+```
+$ARDUINO/hardware/tools/avr/bin/avrdude \
+   -C$ARDUINO/hardware/tools/avr/etc/avrdude.cong \
+   -v -patmega328p \
+   -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xF4:m \
+   -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
+```
+becomes
+```
+$ARDUINO/hardware/tools/avr/bin/avrdude \
+   -C$ARDUINO/hardware/tools/avr/etc/avrdude.cong \
+   -v -patmega328pb \
+   -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xF4:m \
+   -Uhfuse:w:0xDA:m -Ulfuse:w:0xFF:m
+```
+(Note the change in the 3rd line)
+
+If your IDE isinstalled in `$HOME/arduino-1.8.9`, then you would type
+```
+export ARDUINO=$HOME/arduino-1.8.9
+```
+before running the above command.
+
+Alternatively, if using Linux, Create file `~/.avrduderc` containing:
+```
+part parent "m328"
+    id			= "m328p";
+    desc		= "ATmega328P";
+    signature		= 0x1e 0x95 0x14;
+
+    ocdrev              = 1;
+;
+```
+(setting the `desc` and `signature` as required).
+
+
+
+
+This erases the memory so, you then need to restore the bootloader:
+```
+~/arduino-1.8.9/hardware/tools/avr/bin/avrdude \
+   -C~/arduino-1.8.9/hardware/tools/avr/etc/avrdude.cong \
+   -v -patmega328pb \
+   -cusbasp -Pusb -Uflash:w:./optiboot_atmega328.hex
+```
+(This also allows the latest bootloader to be downloaded and installed.)
+
+You can then remove the in-circuit programmer and upload the
+GPIB-to-USB software sketch in the normal way from the Arduino IDE
+through the USB cable and with the newly installed boot loader.
+
 
 Future plans
 ------------
