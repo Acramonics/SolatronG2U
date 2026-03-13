@@ -47,7 +47,7 @@ video](https://www.youtube.com/watch?v=DAS1KVU_FaA) which explains how
 to address a problem with the Arduino losing its software when the USB
 us disconnected, but the GPIB connection is still present. The GPIB
 seems to provide some partial power to the Arduino and he provides
-instructions on setting a brownout fuse in software.
+instructions on setting a brown-out fuse in software.
 
 I provide a summary of all the necessary information on this page.
 
@@ -124,12 +124,12 @@ See [GPIB on WikiPedia](https://en.wikipedia.org/wiki/GPIB). In this
 application, this is rather irrelevant as everything is connected to a
 common ground.
 
-The Brownout Fuse
------------------
+The Brown-Out Fuse
+------------------
 
 As described above, @TheHWCave provides an [update
 video](https://www.youtube.com/watch?v=DAS1KVU_FaA) which explains how
-to set the 'brownout fuse' on the Arduino to prevent it losing its
+to set the 'brown-out fuse' on the Arduino to prevent it losing its
 software.
 
 The 'extended fuse byte' has three bits that set the Brown-Out
@@ -159,6 +159,7 @@ The values for the BODLEVEL bits are as follows:
 |010                | 0x02     | Reserved | Reserved | Reserved |       |
 |001                | 0x01     | Reserved | Reserved | Reserved |       |
 |000                | 0x00     | Reserved | Reserved | Reserved |       |
+
 (*) Since bits 3 to 7 are not used, these can all be set to zero and
 the Hex values reflect that.
 
