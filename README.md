@@ -204,23 +204,22 @@ ATmega328   | 0x1E       | 0x95       | 0x14
 ATmega328P  | 0x1E       | 0x95       | 0x0F
 ATmega328PB | 0x1E       | 0x95       | 0x16
 
-For example, the Arduino IDE may call AVRDude (used to set the Fuse)
-expecting to find an ATmega328P, but AVRDude finds an ATmega328PB and
-stops.
+If the configuration doesn't match your chip then, for example, the
+Arduino IDE may call AVRDude (used to set the fuse) expecting to find
+an ATmega328P, but AVRDude finds an ATmega328PB and stops.
 
-This can be done in a configuration file or by manually re-running the
-failed command, but correcting for the appropriate chip. (See
-instructions below.)
+The configuration can be set in a configuration file or by manually
+re-running the failed command, but correcting for the appropriate
+chip. (See instructions below.)
 
-If using Linux, the easest thing to do is create a file `~/.avrduderc`
-containing:
+If using Linux, the easest thing to do is create configuration file:
+`~/.avrduderc` containing:
 
 ```
 part parent "m328"
-    id			= "m328p";
-    desc		= "ATmega328P";
-    signature		= 0x1e 0x95 0x14;
-
+    id                  = "m328p";
+    desc                = "ATmega328P";
+    signature           = 0x1e 0x95 0x14;
     ocdrev              = 1;
 ;
 ```
