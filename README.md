@@ -191,7 +191,7 @@ https://www.youtube.com/watch?v=RaLirRvSngk
 ### Step 1: The Arduino IDE
 
 Install the Arduino IDE as described on the [Arduino Web
-Site]https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE
+Site](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
 
 ### Step 2: Configure the IDE for the Arduino Nano ATmega chip you are using [OPTIONAL]
 
@@ -223,7 +223,7 @@ part parent "m328"
     ocdrev              = 1;
 ;
 ```
-setting the `desc` and `signature` as required depending on what
+setting the `id`, `desc` and `signature` as required depending on what
 ATmega chip you have with signature bytes set as per the table above.
 
 Alternatively you can allow AVRDude from the IDE to fail and then run
@@ -238,7 +238,7 @@ As described above, you will need a second Arduino, or an ICSP
 programmer spported by the Arduino IDE, to set the fuse. The IDE runs
 the AVRDude software to perform the programming of the Brown-Out Fuse.
 
-*To set the fuse from the Arduino IDE, procede as follows --- to be written*
+*To set the fuse from the Arduino IDE, proceed as follows --- to be written*
 
 
 See:
@@ -249,7 +249,7 @@ See:
 
 Set the IDE to run in verbose mode so you can see what it is doing as
 [described
-here]https://support.arduino.cc/hc/en-us/articles/4407705216274-Use-verbose-output-in-the-Arduino-IDE
+here](https://support.arduino.cc/hc/en-us/articles/4407705216274-Use-verbose-output-in-the-Arduino-IDE)
 
 If you have configured the IDE properly, then it should work with no
 errors.  If you haven't then the AVRDude software will fail since the
@@ -286,7 +286,7 @@ $ARDUINO/hardware/tools/avr/bin/avrdude \
 
 Setting the fuse erases the memory, so you then need to restore the bootloader.
 
-Instructions on doing this from the IDE are [described here]https://support.arduino.cc/hc/en-us/articles/4841602539164-Burn-the-bootloader-on-UNO-Mega-and-classic-Nano-using-another-Arduino#ide
+Instructions on doing this from the IDE are [described here](https://support.arduino.cc/hc/en-us/articles/4841602539164-Burn-the-bootloader-on-UNO-Mega-and-classic-Nano-using-another-Arduino#ide)
 
 Alternatively, you can do it from the command line using AVRDude:
 
