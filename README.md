@@ -313,11 +313,3 @@ through the USB cable and with the newly installed boot loader.
 *To be written.*
 
 
-
-
-
-Future plans
-------------
-
-In future, I may do an SMD version to minimize the size and weight!
-
