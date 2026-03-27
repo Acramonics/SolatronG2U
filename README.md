@@ -1,10 +1,11 @@
-G2U
-===
+G2U (SMD)
+=========
 
 Andrew Martin, acramonics, 2026
 -------------------------------
 
 `G2U` is a PCB for a GPIB to USB adapter using an Arduino Nano 3.
+This is an SMD version to reduce size.
 
 GPIB is a vendor-neutral interface for controlling equipment and
 logging data. While rather outdated, and largely replaced by USB and
@@ -64,17 +65,14 @@ Bill of Materials
 -----------------
 
 - Arduino ATmega Nano 3.x with USB (ideally USB-C) [1 off]
-- 6K2 0.25W resistors (R1-R16) [16 off]
-- 120R 0.25W resistors (R17-R32) [16 off]
+- 6K2 0603 SMD resistors (R1-R16) [16 off]
+- 120R 0603 SMD resistors (R17-R32) [16 off]
 - Centronics-style 24P 'Series 57' male connector [1 off]
 
-The PCB is 78.05mm x 71.40mm so you will need a plastic case to
-accomodate this.  The Centronics-style connector projects from the
-board so will need a suitable cutout. The USB connector is set back on
-the board, so it's not easy to plug a cable in and out once the board
-is in the case, but, since the GPIB sockets are usually at the back of
-equipment, the expectation is that the board and the cable will be
-left plugged in.
+The PCB is 64mm x 60mm so you will need a plastic case to accomodate
+this.  The Centronics-style connector projects from the board so will
+need a suitable cutout. The USB connector is also at the edge of the
+the board on the side.
 
 Ardunio to GPIB connections
 ---------------------------
