@@ -52,7 +52,36 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|151277252|78422683|59b64be6-432f-4970-82a2-44d3e5501700|c81cf011-28b6-4010-9ef0-6ef0e8009bfd",
+          ""
+        ],
+        [
+          "malformed_courtyard|186500000|38700000|37cc0d2c-1ea8-4420-8115-f7df42d5bcb8|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|202000000|47950000|80f377fb-5259-4ce5-96bd-b4d6326bbd8f|08fb3845-389e-4048-bc81-f2e2a7e7af9a",
+          ""
+        ],
+        [
+          "silk_overlap|165585250|58826647|17ce9a76-c344-4e36-b468-cdb8e2ce21d5|3b74a10a-50bb-4d50-8658-47e457ba4ee1",
+          ""
+        ],
+        [
+          "silk_overlap|165585250|72469502|17ce9a76-c344-4e36-b468-cdb8e2ce21d5|4637d3c5-b800-4571-b0ab-2680bba4c026",
+          ""
+        ],
+        [
+          "silk_overlap|183135250|58112361|cde557ce-a792-4cf8-9ac8-25e3ad00e289|f5eae6f1-9501-45b2-b10b-98225aefaa63",
+          ""
+        ],
+        [
+          "silk_overlap|183150000|73150000|95363364-ac49-46b1-b2a3-c253758b11c3|cde557ce-a792-4cf8-9ac8-25e3ad00e289",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -485,7 +514,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "./G2U_gerber",
+      "plot": "./G2U_SMD_gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
