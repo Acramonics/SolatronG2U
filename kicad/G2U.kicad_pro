@@ -54,7 +54,7 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "courtyards_overlap|77027252|113772683|59b64be6-432f-4970-82a2-44d3e5501700|c81cf011-28b6-4010-9ef0-6ef0e8009bfd",
+          "courtyards_overlap|77227252|113772683|59b64be6-432f-4970-82a2-44d3e5501700|c81cf011-28b6-4010-9ef0-6ef0e8009bfd",
           ""
         ],
         [
@@ -162,7 +162,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.5,
+        "min_track_width": 0.4,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
