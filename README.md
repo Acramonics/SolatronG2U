@@ -120,14 +120,14 @@ Bill of Materials
 -----------------
 
 - Arduino ATmega Nano 3.x with USB (ideally USB-C) [1 off]
-- 6K2 0603 SMD resistors (R1-R16) [16 off]
-- 120R 0603 SMD resistors (R17-R32) [16 off]
+- 6K2 1206 SMD resistors (R1-R16) [16 off]
+- 120R 1206 SMD resistors (R17-R32) [16 off]
 - Centronics-style 24P 'Series 57' male connector [1 off]
+- 83x54x30mm ABS plastic box [1 off]
+The Centronics-style connector projects from the rear of the board so
+will need a suitable cutout in the back of the case. The USB connector
+is also at the edge of the so the case will need a cutout at the side.
 
-The PCB is 64mm x 60mm so you will need a plastic case to accomodate
-this.  The Centronics-style connector projects from the board so will
-need a suitable cutout. The USB connector is also at the edge of the
-the board on the side.
 
 Ardunio to GPIB connections
 ---------------------------
