@@ -42,9 +42,10 @@ than £8.00), and I have used a PCB-mounted **male** connector that can
 plug straight into the back of the hardware, so you don't need to
 worry about cables.
 
-### Hardware
+Hardware
+--------
 
-#### Series 57 Connector
+### Series 57 Connector
 
 My design places the *Series 57* connector on the back of the board
 and the *Arduino Nano* on the front with 1206 SMD resistors on both
@@ -76,7 +77,7 @@ no.:1102628842). Select 'Panel Type', 24P, Male.  You **must** ensure
 you have the male connector! They are about £1.00 each plus £2.76
 postage.
 
-#### Case
+### Case
 
 I designed this to fit in a nominal 83x54x30mm ABS plastic box
 available from [Amazon](https://www.amazon.co.uk/dp/B0D44WNKD3). These
@@ -99,7 +100,8 @@ need to male-to-female cable. If you really did want to use a female
 *Series 57* connector with a male-to-male cable, then you would need
 to wire the cable to cross over the pins.
 
-### Software
+Software
+--------
 
 @TheHWCave provides the code for the Arduino Nano 3 and a logger
 script on [GitHub](https://github.com/TheHWcave/GPIB-to-USB).
@@ -117,10 +119,11 @@ I provide a summary of all the necessary information on this page.
 The PCB
 -------
 
-As is often the case with my PCBs, you will require my
-`ACRM_KiCad_Libs` to provide the footprint for the 24-pin male
-Centronics-style connector. You will need a version from March 2026 or
-later.
+You can download a ZIP file of the Gerber files.  If you wish to
+tinker with the KiCad files, as is often the case with my PCBs, you
+will require my `ACRM_KiCad_Libs` to provide the footprint for the
+24-pin male Centronics-style connector. You will need a version from
+May 2026 or later.
 
 Bill of Materials
 -----------------
@@ -128,8 +131,9 @@ Bill of Materials
 - Arduino ATmega Nano 3.x with USB (ideally USB-C) [1 off]
 - 6K2 1206 SMD resistors (R1-R16) [16 off]
 - 120R 1206 SMD resistors (R17-R32) [16 off]
-- Centronics-style 24P 'Series 57' male connector [1 off]
-- 83x54x30mm ABS plastic box [1 off]
+- Centronics-style 24P 'Series 57' male connector (see above) [1 off]
+- 83x54x30mm ABS plastic box (see above) [1 off]
+
 The Centronics-style connector projects from the rear of the board so
 will need a suitable cutout in the back of the case. The USB connector
 is also at the edge of the so the case will need a cutout at the side.
@@ -362,8 +366,8 @@ See
 - https://forum.arduino.cc/t/how-do-i-install-optiboot-on-the-newest-arduino-ide/345443
 - https://github.com/Optiboot/optiboot
 
-(The latest, as of March 2026, is
-https://github.com/Optiboot/optiboot/releases/download/v8.0/package_optiboot_optiboot-additional_index.json)
+The latest, as of March 2026, is
+https://github.com/Optiboot/optiboot/releases/download/v8.0/package_optiboot_optiboot-additional_index.json
 
 ### Step 5: Installing the Arduino software
 
