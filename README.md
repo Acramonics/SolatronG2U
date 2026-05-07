@@ -31,8 +31,6 @@ interface](https://egirland.blogspot.com/2014/03/arduino-uno-as-usb-to-gpib-cont
 but note that this uses different pin assignments and different
 software.
 
-### Hardware
-
 @TheHWCave was unable to obtain a PCB-mounted Centronics-style
 (*Series 57*) 24-pin connector. They are also known as SCSI connectors
 (technically SCSI-I; later SCSI versions use other connectors), or
@@ -44,10 +42,15 @@ than £8.00), and I have used a PCB-mounted **male** connector that can
 plug straight into the back of the hardware, so you don't need to
 worry about cables.
 
-**However**, this design uses the straight vertical pinned version
-which is more difficult to find. These will be described as 'pin type'
-or 'panel type'. The solder cup vertical version (also called 'line
-type') are much easier to find, but these are **not** what you want!
+### Hardware
+
+#### Series 57 Connector
+
+My design uses the **straight vertical pinned** version of the *Series
+57* connectory which is more difficult to find. These will be
+described as 'pin type' or 'panel type'. The solder cup vertical
+version (also called 'line type') are much easier to find, but these
+are **not** what you want!
 
 *NorComp* seems to be the most common manufacturer and you want the
 '111' series for straight connectors ('112' series is right-angle
@@ -65,9 +68,9 @@ versions.  I found them on the [SKYWIN
 Store](https://www.aliexpress.com/item/1005005636771892.html) (Store
 no.:1102628842). Select 'Panel Type', 24P, Male.  You **must** ensure
 you have the male connector! They are about £1.00 each plus £2.76
-postage,
+postage.
 
-My design places the *Series 57* connector on the back of the board
+The design places the *Series 57* connector on the back of the board
 and the *Arduino Nano* on the front with 1206 SMD resistors on both
 front and back. The board then lies flat against the back of the meter
 with the USB Arduino connection to the left hand side.
