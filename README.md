@@ -46,11 +46,17 @@ worry about cables.
 
 #### Series 57 Connector
 
-My design uses the **straight vertical pinned** version of the *Series
-57* connectory which is more difficult to find. These will be
-described as 'pin type' or 'panel type'. The solder cup vertical
-version (also called 'line type') are much easier to find, but these
-are **not** what you want!
+My design places the *Series 57* connector on the back of the board
+and the *Arduino Nano* on the front with 1206 SMD resistors on both
+front and back. The board (in its case if desired) then lies flat
+against the back of the meter with the USB Arduino connection to the
+left hand side.
+
+The design uses the **straight vertical pinned** version of the
+*Series 57* connector which is more difficult to find than the
+right-angled version. You will find these described as 'pin type' or
+'panel type'. The solder cup vertical version (also called 'line
+type') are much easier to find, but these are **not** what you want!
 
 *NorComp* seems to be the most common manufacturer and you want the
 '111' series for straight connectors ('112' series is right-angle
@@ -70,10 +76,7 @@ no.:1102628842). Select 'Panel Type', 24P, Male.  You **must** ensure
 you have the male connector! They are about £1.00 each plus £2.76
 postage.
 
-The design places the *Series 57* connector on the back of the board
-and the *Arduino Nano* on the front with 1206 SMD resistors on both
-front and back. The board then lies flat against the back of the meter
-with the USB Arduino connection to the left hand side.
+#### Case
 
 I designed this to fit in a nominal 83x54x30mm ABS plastic box
 available from [Amazon](https://www.amazon.co.uk/dp/B0D44WNKD3). These
