@@ -136,7 +136,8 @@ Bill of Materials
 
 The Centronics-style connector projects from the rear of the board so
 will need a suitable cutout in the back of the case. The USB connector
-is also at the edge of the so the case will need a cutout at the side.
+is at the edge of the board so the case will also need a cutout at the
+side.
 
 
 Ardunio to GPIB connections
