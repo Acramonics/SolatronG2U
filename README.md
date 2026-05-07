@@ -53,8 +53,11 @@ type') are much easier to find, but these are **not** what you want!
 '111' series for straight connectors ('112' series is right-angle
 while '211/212' are the female versions).  Specifically, the part
 number you want for a straight connector is `111-024-113L001`.  At the
-time of writing (May 2026), in the UK these are available from Mouser,
-Farnell (to special order) and DigiKey.
+time of writing (May 2026), in the UK these are available from
+[Mouser](https://www.mouser.co.uk/ProductDetail/NorComp/111-024-113L001?qs=IGgAdOvCTsTzuqCRtmjabw%3D%3D),
+[Farnell](https://uk.farnell.com/norcomp/111-024-113l001/connector-scsi-plug-24-position/dp/2471322)
+(to special order) and
+[DigiKey](https://www.digikey.co.uk/en/products/detail/norcomp-inc/111-024-113L001/955147).
 
 A much cheaper equivalent is available from AliExpress, but they are
 hard to track down amongst all the right-angled and solder-cup
