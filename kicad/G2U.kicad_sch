@@ -4206,7 +4206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ACRM:Connector_CentronicsMale-2x12_P2.16mm_P4.29_Horizontal"
+		(property "Footprint" "ACRM:Connector_CentronicsMale-2x12_P2.16mm_P4.29_Vertical"
 			(at 179.07 106.68 0)
 			(effects
 				(font

@@ -17,8 +17,6 @@ A video on GPIB (also known as IEEE-488) is on
 [YouTube](https://www.youtube.com/watch?v=EEtETGfL_VE) and details are
 on [Wikipedia](https://en.wikipedia.org/wiki/GPIB).
 
-### Hardware
-
 The original circuit and software was by Rudolf Reuter and modified by
 @TheHWCave. Rudolf's blog, where this was described, doesn't seem to
 be available any more (as of March 2026), but @TheHWCave provides a
@@ -26,17 +24,71 @@ detailed description of the circuit on
 [YouTube](https://www.youtube.com/watch?v=RaLirRvSngk) (see the
 screenshots in the `SourceImages` directory).  He builds it on
 stripboard and uses an Arduino breakout board, so I decided to create
-a PCB instead. He was unable to obtain a PCB-mounted Centronics-style
-(*Series 57*) 24-pin connector. These are now easily available from
-AliExpress (at about £2.50 with free postage if you spend more than
-£8.00), and I have used a PCB-mounted male connector that can plug
-straight into the back of the hardware, so you don't need to worry
-about cables.
+a PCB instead.
 
 There is another page with a [discussion of creating a GPIB/USB
 interface](https://egirland.blogspot.com/2014/03/arduino-uno-as-usb-to-gpib-controller.html),
 but note that this uses different pin assignments and different
 software.
+
+### Hardware
+
+@TheHWCave was unable to obtain a PCB-mounted Centronics-style
+(*Series 57*) 24-pin connector. They are also known as SCSI connectors
+(technically SCSI-I; later SCSI versions use other connectors), or
+Centronics connectors, and occasionally as IEEE-488 connectors!
+
+The right-angled (horizontal) version of these is now easily available
+from AliExpress (at about £2.50 with free postage if you spend more
+than £8.00), and I have used a PCB-mounted **male** connector that can
+plug straight into the back of the hardware, so you don't need to
+worry about cables.
+
+**However**, this design uses the straight vertical pinned version
+which is more difficult to find. These will be described as 'pin type'
+or 'panel type'. The solder cup vertical version (also called 'line
+type') are much easier to find, but these are **not** what you want!
+
+*NorComp* seems to be the most common manufacturer and you want the
+'111' series for straight connectors ('112' series is right-angle
+while '211/212' are the female versions).  Specifically, the part
+number you want for a straight connector is `111-024-113L001`.  At the
+time of writing (May 2026), in the UK these are available from Mouser,
+Farnell (to special order) and DigiKey.
+
+A much cheaper equivalent is available from AliExpress, but they are
+hard to track down amongst all the right-angled and solder-cup
+versions.  I found them on the [SKYWIN
+Store](https://www.aliexpress.com/item/1005005636771892.html) (Store
+no.:1102628842). Select 'Panel Type', 24P, Male.  You **must** ensure
+you have the male connector! They are about £1.00 each plus £2.76
+postage,
+
+My design places the *Series 57* connector on the back of the board
+and the *Arduino Nano* on the front with 1206 SMD resistors on both
+front and back. The board then lies flat against the back of the meter
+with the USB Arduino connection to the left hand side.
+
+I designed this to fit in a nominal 83x54x30mm ABS plastic box
+available from [Amazon](https://www.amazon.co.uk/dp/B0D44WNKD3). These
+are the nominal external dimensions, the internal dimensions being
+approximately 78x49x26mm. Each corner has a post for screwing on the
+lid so the board has 7.5mm cutouts in each corner to accommodate
+these.
+
+Of course, you can use a larger case and fit the board at one end.
+Alternatively, you could feed a USB cable and a 24pin *Series 57*
+(Centronics) cable through holes in a larger case and just mount the
+board anywhere in the case. This would also allow you to use one of
+the easier-to-obtain right-angle (horizontal) *Series 57* connectors.
+You need to use a male-to-female cable for the *Series 57*
+connection.
+
+As above, you **must use a male connector** - the pin connections
+would be incorrect for a female connector - and this is why you would
+need to male-to-female cable. If you really did want to use a female
+*Series 57* connector with a male-to-male cable, then you would need
+to wire the cable to cross over the pins.
 
 ### Software
 
